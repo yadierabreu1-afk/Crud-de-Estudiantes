@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef1f5;
+    margin: 0;
+    padding: 30px 15px;
+}
+
+.contenedor {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 0;
+}
+
+h2 {
+    color: #34495e;
+    font-size: 18px;
+}
+
+.formulario {
+    display: flex;
+    gap: 10px;
+}
+
+.formulario input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#btnAgregar {
+    background-color: #27ae60;
+}
+
+/* Clase que se pone cuando estamos editando */
+#btnAgregar.modo-editar {
+    background-color: #f39c12;
+}
+
+#btnLimpiar {
+    background-color: #7f8c8d;
+    width: 100%;
+    margin-top: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 8px;
+    background-color: #f7f9fb;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Estudiante que se está editando */
+li.editando {
+    background-color: #fff3cd;
+    border-color: #f39c12;
+}
+
+.acciones {
+    display: flex;
+    gap: 5px;
+}
+
+.editar {
+    background-color: #f39c12;
+}
+
+.eliminar {
+    background-color: #e74c3c;
+}
